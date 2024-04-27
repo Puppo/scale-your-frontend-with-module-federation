@@ -1,0 +1,3 @@
+
+    export type RemoteKeys = 'federation_ui/Header' | 'federation_ui/Footer' | 'federation_ui/NavBar' | 'federation_ui/ErrorBoundary';
+    type PackageType<T> = T extends 'federation_ui/ErrorBoundary' ? typeof import('federation_ui/ErrorBoundary') :T extends 'federation_ui/NavBar' ? typeof import('federation_ui/NavBar') :T extends 'federation_ui/Footer' ? typeof import('federation_ui/Footer') :T extends 'federation_ui/Header' ? typeof import('federation_ui/Header') :any;

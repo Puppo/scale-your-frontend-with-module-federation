@@ -8,5 +8,5 @@ The idea is to show how to use Module Federation to create a microfrontend archi
 
 1. Clone the repo
 2. Run `npm install` on each folder
-3. Run `npm start` on each folder (basket, products, shell)
+3. Run `npm dev` on each folder (ui, basket, products, users, shell)
 4. Open `http://localhost:3000` on your browser

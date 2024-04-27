@@ -19,6 +19,10 @@ export default defineConfig({
 							"federation_products@http://localhost:3003/mf-manifest.json",
 						federation_basket:
 							"federation_basket@http://localhost:3002/mf-manifest.json",
+						federation_ui:
+							"federation_ui@http://localhost:3004/mf-manifest.json",
+						federation_users:
+							"federation_users@http://localhost:3005/mf-manifest.json",
 					},
 					shared: [
 						{

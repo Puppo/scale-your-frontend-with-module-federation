@@ -20,6 +20,10 @@ export default defineConfig({
 					exposes: {
 						"./Basket": "./src/App.tsx",
 					},
+					remotes: {
+						federation_ui:
+							"federation_ui@http://localhost:3004/mf-manifest.json",
+					},
 					shared: [
 						{
 							...Object.entries(packageJson.dependencies).reduce(

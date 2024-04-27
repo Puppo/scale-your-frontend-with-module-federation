@@ -1,34 +1,15 @@
-import { Suspense, lazy } from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Layout from "../components/Layout";
+import { BrowserRouter } from "react-router-dom";
+import { UserProvider } from "./context/userContext";
+import Routes from "./routes/routes";
 
-const Products = lazy(() => import("federation_products/Products"));
-const Basket = lazy(() => import("federation_basket/Basket"));
+import "./App.css";
 
 export default function App() {
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Layout />}>
-					<Route
-						path="/products/*"
-						element={
-							<Suspense>
-								<Products />
-							</Suspense>
-						}
-					/>
-					<Route
-						path="/basket/*"
-						element={
-							<Suspense>
-								<Basket />
-							</Suspense>
-						}
-					/>
-				</Route>
-				<Route index element={<Navigate to="products" replace />} />
-			</Routes>
-		</BrowserRouter>
+		<UserProvider>
+			<BrowserRouter>
+				<Routes />
+			</BrowserRouter>
+		</UserProvider>
 	);
 }

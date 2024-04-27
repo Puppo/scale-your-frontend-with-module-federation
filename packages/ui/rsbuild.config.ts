@@ -20,6 +20,8 @@ export default defineConfig({
 					exposes: {
 						"./Header": "./src/Header/Header.tsx",
 						"./Footer": "./src/Footer/Footer.tsx",
+						"./NavBar": "./src/NavBar/NavBar.tsx",
+						"./ErrorBoundary": "./src/ErrorBoundary/ErrorBoundary.tsx",
 					},
 					shared: [
 						{
