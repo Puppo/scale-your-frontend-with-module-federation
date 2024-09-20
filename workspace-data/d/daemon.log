@@ -1,0 +1,11 @@
+[NX Daemon Server] - 2024-09-20T15:15:44.483Z - Started listening on: /var/folders/0m/wg8hb0z968d_2p_l0gxnhkj00000gn/T/918d60a79dd02184d493/d.sock
+[NX Daemon Server] - 2024-09-20T15:15:44.485Z - [WATCHER]: Subscribed to changes within: /Users/puppo/Documents/GitHub/scale-your-frontend-with-module-federation/scale-your-frontend-with-module-federation (native)
+[NX Daemon Server] - 2024-09-20T15:15:44.486Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-20T15:15:44.486Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-20T15:15:44.487Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-20T15:15:44.488Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2024-09-20T15:15:44.488Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2024-09-20T15:15:44.488Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-20T15:15:44.489Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-09-20T15:15:44.489Z - [WATCHER]: Stopping the watcher for /Users/puppo/Documents/GitHub/scale-your-frontend-with-module-federation/scale-your-frontend-with-module-federation (sources)
+[NX Daemon Server] - 2024-09-20T15:15:44.489Z - [WATCHER]: Stopping the watcher for /Users/puppo/Documents/GitHub/scale-your-frontend-with-module-federation/scale-your-frontend-with-module-federation (outputs)
