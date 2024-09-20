@@ -8,17 +8,17 @@
 		"preview": "rsbuild preview"
 	},
 	"dependencies": {
-		"jose": "^5.2.4",
-		"react": "^18.3.0",
-		"react-dom": "^18.3.0",
-		"react-router-dom": "^6.23.0",
-		"zod": "^3.23.4"
+		"jose": "^5.9.2",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-router-dom": "^6.26.2",
+		"zod": "^3.23.8"
 	},
 	"devDependencies": {
-		"@rsbuild/core": "^0.6.7",
-		"@rsbuild/plugin-react": "^0.6.7",
-		"@types/react": "^18.2.79",
-		"@types/react-dom": "^18.2.25",
-		"typescript": "^5.4.2"
+		"@rsbuild/core": "^1.0.5",
+		"@rsbuild/plugin-react": "^1.0.2",
+		"@types/react": "^18.3.8",
+		"@types/react-dom": "^18.3.0",
+		"typescript": "^5.6.2"
 	}
 }
