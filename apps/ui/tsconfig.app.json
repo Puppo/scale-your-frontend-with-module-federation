@@ -5,7 +5,6 @@
     "types": [],
     "target": "ES2020"
   },
-  "files": ["src/main.ts", "src/app/remote-entry/entry.routes.ts"],
-  "include": ["src/**/*.d.ts"],
+  "include": ["src/**/*.d.ts", "src/**/*.ts"],
   "exclude": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
 }

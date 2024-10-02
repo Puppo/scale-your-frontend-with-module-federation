@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import { Component } from '@angular/core';
 
 @Component({
   standalone: true,
-  imports: [CommonModule, NxWelcomeComponent],
+  imports: [CommonModule],
   selector: 'ng-store-ui-entry',
-  template: `<ng-store-nx-welcome></ng-store-nx-welcome>`,
+  template: `<div className="content">
+  <h1>Ui</h1>
+  <p>This is the Ui federation App</p>
+</div>`,
 })
 export class RemoteEntryComponent {}
