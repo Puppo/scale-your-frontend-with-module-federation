@@ -1,5 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
-import { useCallback } from "react";
+import { useCallback, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import type { User } from "../models/users";
 import { login } from "../services/users";
@@ -15,11 +15,15 @@ interface LoginProps {
 
 export default function Login({ onUserLogin }: LoginProps) {
 	const navigate = useNavigate();
+	const formRef = useRef<HTMLFormElement>(null);
 
 	const { mutate: onSubmit } = useMutation({
 		mutationFn: (payload: LoginForm) =>
 			login(payload.username, payload.password),
-		onSuccess: onUserLogin,
+		onSuccess: (user) => {
+			formRef.current?.reset();
+			onUserLogin(user);
+		},
 	});
 
 	const handleSubmit = useCallback(
@@ -40,7 +44,7 @@ export default function Login({ onUserLogin }: LoginProps) {
 		<>
 			<div>Login</div>
 
-			<form onSubmit={handleSubmit}>
+			<form ref={formRef} onSubmit={handleSubmit}>
 				<label>
 					Email:
 					<input type="username" name="username" />

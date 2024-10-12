@@ -6,6 +6,7 @@
 	"scripts": {
 		"postinstall": "lefthook install",
 		"dev": "npm run dev",
+		"build": "npm run build",
 		"lint": "biome lint"
 	},
 	"author": "",
