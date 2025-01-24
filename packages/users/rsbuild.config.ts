@@ -3,7 +3,7 @@ import { defineConfig } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
 import packageJson from "./package.json";
 
-const SINGLETON = new Set(["react", "react-dom", "react-router-dom"]);
+const SINGLETON = new Set(["react", "react-dom", "react-router"]);
 
 export default defineConfig({
 	server: {

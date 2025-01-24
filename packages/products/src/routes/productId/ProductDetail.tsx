@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import { z } from "zod";
 import { retrieveById } from "../../services/products";
 import useParamsTypeSafe from "../../utils/useParamsTypeSafe";

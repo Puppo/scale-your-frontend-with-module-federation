@@ -1,6 +1,6 @@
 import ErrorBoundary from "federation_ui/ErrorBoundary";
 import { Suspense, lazy } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router";
 
 const Basket = lazy(() => import("./routes/Basket"));
 

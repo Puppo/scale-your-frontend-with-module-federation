@@ -2,7 +2,7 @@ import Footer from "federation_ui/Footer";
 import Header from "federation_ui/Header";
 import NavBar from "federation_ui/NavBar";
 import type { ComponentProps } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 import { useUser } from "../../context/userContext";
 import styles from "./Layout.module.css";
 

@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import ErrorBoundary from "federation_ui/ErrorBoundary";
 import { Suspense, lazy } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router";
 
 const Products = lazy(() => import("./routes/Products"));
 const ProductDetail = lazy(() => import("./routes/productId/ProductDetail"));

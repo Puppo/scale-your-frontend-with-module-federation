@@ -1,6 +1,6 @@
 import UsersApp from "federation_users/UsersApp";
 import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { type User, useUser } from "../context/userContext";
 
 export default function () {
