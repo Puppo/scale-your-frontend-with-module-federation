@@ -10,30 +10,39 @@ export default function ShellRoutes() {
 	return (
 		<Routes>
 			<Route path="/" element={<Layout />}>
-				<Route
-					path="/products/*"
-					element={
-						<Suspense>
-							<Products />
-						</Suspense>
-					}
-				/>
-				<Route
-					path="/basket/*"
-					element={
-						<Suspense>
-							<Basket />
-						</Suspense>
-					}
-				/>
-				<Route
-					path="/users/*"
-					element={
-						<Suspense>
-							<Users />
-						</Suspense>
-					}
-				/>
+				<Route path="/products">
+					<Route
+						index
+						path="*"
+						element={
+							<Suspense>
+								<Products />
+							</Suspense>
+						}
+					/>
+				</Route>
+				<Route path="/basket">
+					<Route
+						index
+						path="*"
+						element={
+							<Suspense>
+								<Basket />
+							</Suspense>
+						}
+					/>
+				</Route>
+				<Route path="/users">
+					<Route
+						index
+						path="*"
+						element={
+							<Suspense>
+								<Users />
+							</Suspense>
+						}
+					/>
+				</Route>
 			</Route>
 			<Route index element={<Navigate to="products" replace />} />
 		</Routes>
